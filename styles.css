@@ -1,0 +1,254 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cinzel", serif; /* A serif font to give a classical, mythical look */
+  background-image: url("./images/background_workshop.webp"); /* Path to your background image */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the image fixed when scrolling */
+  color: #f5f5f7; /* Light text color for contrast */
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: #ffffff00; /* More transparent background */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Slightly more subtle shadow */
+  backdrop-filter: blur(
+    12px
+  ); /* Reduced blur for more visibility of background */
+}
+
+/* Section Styling */
+.section {
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px; /* Added gap between image and text */
+}
+
+.about img {
+  max-width: 150px;
+  border-radius: 50%;
+  border: 2px solid #f5f5f7; /* Border around image */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for a floating effect */
+}
+
+.about h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 1.2em;
+}
+
+.about h2,
+.about p {
+  color: #f5f5f7;
+}
+
+/* Responsive Layout for About Section */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about img {
+    margin-bottom: 20px;
+  }
+}
+
+/* Portfolio Section */
+.portfolio h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.05); /* More transparent background */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  gap: 30px; /* Add space between image and text */
+}
+
+.portfolio-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.portfolio-item img {
+  max-width: 200px; /* Set maximum width to 200 pixels */
+  max-height: 80px; /* Set maximum height to 80 pixels */
+  background-color: white; /* Set background color to white */
+  border-radius: 8px;
+  border: 2px solid #f5f5f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  object-fit: cover; /* Maintain aspect ratio while fitting within dimensions */
+  display: block; /* Ensures the background color shows behind the image */
+}
+
+.portfolio-item h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.portfolio-item p {
+  font-size: 1.1em;
+}
+
+/* Info Icon Styling */
+.info-icon {
+  font-size: 1.5em;
+  color: #4caf50;
+  background-color: #f5f5f7;
+  border-radius: 55%;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin: 0 auto 10px;
+  position: sticky;
+  left: 50%;
+  margin-right: -50%;
+}
+
+/* Desktop Layout */
+@media (max-width: 768px) {
+  .portfolio-item {
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+  }
+
+  .portfolio-item img {
+    margin-bottom: 10px;
+  }
+
+  .portfolio-item h3 {
+    margin-bottom: 5px;
+  }
+
+  .portfolio-item:nth-child(even) {
+    flex-direction: column; /* Override row-reverse on mobile */
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .portfolio-item {
+    flex-direction: column;
+    text-align: center; /* Center-align text and elements */
+  }
+
+  .info-icon {
+    text-align: center;
+    display: contents;
+  }
+}
+
+/* Contact Section */
+.contact h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-links img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #f5f5f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ffdd33, 0 0 30px #ffdd33, 0 0 40px #ffdd33; /* Magic glow effect */
+  animation: magic-glow 1.5s infinite alternate;
+}
+
+.contact button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin: 30px auto; /* Center the button */
+  display: block; /* Ensures the button takes up full width available */
+  font-size: 1.2em;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.contact button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffdd33, 0 0 30px #ffdd33, 0 0 40px #ffdd33; /* Magic glow effect */
+  animation: magic-glow 1.5s infinite alternate;
+}
+
+/* Footer Styling */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background for footer */
+  color: #f5f5f7;
+  margin-top: 40px;
+}
+
+.footer p {
+  font-size: 1em;
+  letter-spacing: 0.5px;
+}
+
+@keyframes magic-glow {
+  from {
+    box-shadow: 0 0 20px #ffdd33, 0 0 30px #ffdd33, 0 0 40px #ffdd33;
+  }
+  to {
+    box-shadow: 0 0 25px #ffe066, 0 0 35px #ffe066, 0 0 45px #ffe066;
+  }
+}
