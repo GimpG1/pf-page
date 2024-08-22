@@ -7,11 +7,9 @@
 
 body {
   font-family: "Cinzel", serif; /* A serif font to give a classical, mythical look */
-  background-image: url("./images/background_workshop.webp"); /* Path to your background image */
+  background-color: rgb(66, 23, 221); /* Path to your background image */
   background-size: cover; /* Ensures the image covers the entire background */
-  background-position: center; /* Centers the image */
-  background-attachment: fixed; /* Keeps the image fixed when scrolling */
-  color: #f5f5f7; /* Light text color for contrast */
+  color: #f5f5f7;
   line-height: 1.6;
 }
 
@@ -22,11 +20,9 @@ body {
   padding: 20px;
   overflow: hidden;
   border-radius: 15px;
-  background-color: #ffffff00; /* More transparent background */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Slightly more subtle shadow */
-  backdrop-filter: blur(
-    12px
-  ); /* Reduced blur for more visibility of background */
+  background-color: #ffffff00; /* transparent background */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* subtle shadow */
+  backdrop-filter: blur(12px);
 }
 
 /* Section Styling */
@@ -59,25 +55,22 @@ body {
   margin-bottom: 10px;
 }
 
+.about h1 {
+  font-size: 5em;
+  align-items: end;
+  position: absolute;
+  right: 50px;
+  top: 0;
+}
+
 .about p {
   font-size: 1.2em;
 }
 
 .about h2,
+.about h1,
 .about p {
   color: #f5f5f7;
-}
-
-/* Responsive Layout for About Section */
-@media (max-width: 768px) {
-  .about {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about img {
-    margin-bottom: 20px;
-  }
 }
 
 /* Portfolio Section */
@@ -104,8 +97,8 @@ body {
 }
 
 .portfolio-item img {
-  max-width: 200px; /* Set maximum width to 200 pixels */
-  max-height: 80px; /* Set maximum height to 80 pixels */
+  max-width: 200px;
+  max-height: 80px;
   background-color: white; /* Set background color to white */
   border-radius: 8px;
   border: 2px solid #f5f5f7;
@@ -123,26 +116,82 @@ body {
   font-size: 1.1em;
 }
 
+.portfolio-details {
+  padding: 4px;
+  border: 1px outset rgba(0, 0, 0, 0.7);
+  border-radius: 1em;
+}
+
 /* Info Icon Styling */
 .info-icon {
   font-size: 1.5em;
   color: #4caf50;
-  background-color: #f5f5f7;
   border-radius: 55%;
-  cursor: pointer;
   transition: color 0.3s ease;
   margin: 0 auto 10px;
-  position: sticky;
-  left: 50%;
-  margin-right: -50%;
 }
 
-/* Desktop Layout */
+.info-icon img {
+  border: transparent;
+  max-width: 50px;
+  max-height: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  /* position: sticky; */
+  cursor: pointer;
+  margin: 0 auto 10px;
+  filter: invert(90%);
+}
+
 @media (max-width: 768px) {
+  .container {
+    width: 100%;
+    border: #f5f5f7 none;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about p {
+    font-size: 0.8em;
+  }
+
+  .about h1 {
+    font-size: 1em;
+    position: absolute;
+    right: 1em;
+    top: 0.3em;
+  }
+
+  .about h2 {
+    font-size: 1.75em;
+  }
+
+  .about img {
+    margin-bottom: 20px;
+  }
+
+  .portfolio h2 {
+    font-size: 1.75em;
+  }
+
   .portfolio-item {
     flex-direction: column;
     align-items: center; /* Center items horizontally */
     text-align: center;
+    font-size: 0.8em;
+  }
+
+  .portfolio-item p {
+    font-size: 1em;
+  }
+
+  .info-icon {
+    text-align: center;
+    display: contents;
   }
 
   .portfolio-item img {
@@ -156,18 +205,17 @@ body {
   .portfolio-item:nth-child(even) {
     flex-direction: column; /* Override row-reverse on mobile */
   }
-}
 
-/* Mobile Layout */
-@media (max-width: 768px) {
-  .portfolio-item {
-    flex-direction: column;
-    text-align: center; /* Center-align text and elements */
+  .portfolio-details p {
+    font-size: 0.75em;
   }
 
-  .info-icon {
-    text-align: center;
-    display: contents;
+  .contact h2 {
+    font-size: 1.75em;
+  }
+
+  footer {
+    margin-top: 2px;
   }
 }
 
