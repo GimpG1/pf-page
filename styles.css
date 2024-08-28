@@ -6,11 +6,12 @@
 }
 
 body {
-  font-family: "Cinzel", serif; /* A serif font to give a classical, mythical look */
-  background-color: rgb(66, 23, 221); /* Path to your background image */
-  background-size: cover; /* Ensures the image covers the entire background */
+  font-family: "Arial";
+  background-color: rgb(66, 23, 221);
+  background-size: cover;
   color: #f5f5f7;
   line-height: 1.6;
+  text-transform: none;
 }
 
 /* Container */
@@ -20,14 +21,14 @@ body {
   padding: 20px;
   overflow: hidden;
   border-radius: 15px;
-  background-color: #ffffff00; /* transparent background */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* subtle shadow */
+  background-color: #ffffff00;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(12px);
 }
 
 /* Section Styling */
 .section {
-  padding: 40px 0;
+  padding: 5px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -40,14 +41,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px; /* Added gap between image and text */
+  gap: 30px;
 }
 
 .about img {
   max-width: 150px;
   border-radius: 50%;
-  border: 2px solid #f5f5f7; /* Border around image */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for a floating effect */
+  border: 2px solid #f5f5f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .about h2 {
@@ -84,12 +85,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.05); /* More transparent background */
+  background-color: rgba(255, 255, 255, 0.05);
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  gap: 30px; /* Add space between image and text */
+  gap: 30px;
 }
 
 .portfolio-item:nth-child(even) {
@@ -99,17 +100,22 @@ body {
 .portfolio-item img {
   max-width: 200px;
   max-height: 80px;
-  background-color: white; /* Set background color to white */
+  background-color: white;
   border-radius: 8px;
   border: 2px solid #f5f5f7;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  object-fit: cover; /* Maintain aspect ratio while fitting within dimensions */
-  display: block; /* Ensures the background color shows behind the image */
+  object-fit: cover;
+  display: block;
 }
 
 .portfolio-item h3 {
   font-size: 1.8em;
   margin-bottom: 10px;
+}
+
+.portfolio-item h5 {
+  font-size: 1.2em;
+  padding-left: 20px;
 }
 
 .portfolio-item p {
@@ -128,7 +134,6 @@ body {
   color: #4caf50;
   border-radius: 55%;
   transition: color 0.3s ease;
-  margin: 0 auto 10px;
 }
 
 .info-icon img {
@@ -136,10 +141,12 @@ body {
   max-width: 50px;
   max-height: 50px;
   background-color: rgba(0, 0, 0, 0);
-  /* position: sticky; */
   cursor: pointer;
-  margin: 0 auto 10px;
   filter: invert(90%);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50%;
+  display: inline-block;
 }
 
 @media (max-width: 768px) {
@@ -152,7 +159,7 @@ body {
 
   .about {
     flex-direction: column;
-    text-align: center;
+    text-align: unset;
   }
 
   .about p {
@@ -180,13 +187,14 @@ body {
 
   .portfolio-item {
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
+    align-items: center;
     text-align: center;
     font-size: 0.8em;
   }
 
   .portfolio-item p {
     font-size: 1em;
+    text-align: left;
   }
 
   .info-icon {
@@ -194,8 +202,13 @@ body {
     display: contents;
   }
 
+  .info-icon img {
+    margin: 10px auto 10px;
+  }
+
   .portfolio-item img {
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
 
   .portfolio-item h3 {
@@ -203,7 +216,7 @@ body {
   }
 
   .portfolio-item:nth-child(even) {
-    flex-direction: column; /* Override row-reverse on mobile */
+    flex-direction: column;
   }
 
   .portfolio-details p {
@@ -251,7 +264,7 @@ body {
 
 .social-links img:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 20px #ffdd33, 0 0 30px #ffdd33, 0 0 40px #ffdd33; /* Magic glow effect */
+  box-shadow: 0 0 20px #ffdd33, 0 0 30px #ffdd33, 0 0 40px #ffdd33;
   animation: magic-glow 1.5s infinite alternate;
 }
 
@@ -261,8 +274,8 @@ body {
   padding: 12px 24px;
   border: none;
   cursor: pointer;
-  margin: 30px auto; /* Center the button */
-  display: block; /* Ensures the button takes up full width available */
+  margin: 30px auto;
+  display: block;
   font-size: 1.2em;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -274,7 +287,7 @@ body {
 .contact button:hover {
   background-color: #45a049;
   transform: scale(1.05);
-  box-shadow: 0 0 20px #ffdd33, 0 0 30px #ffdd33, 0 0 40px #ffdd33; /* Magic glow effect */
+  box-shadow: 0 0 20px #ffdd33, 0 0 30px #ffdd33, 0 0 40px #ffdd33;
   animation: magic-glow 1.5s infinite alternate;
 }
 
@@ -282,7 +295,7 @@ body {
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7); /* Darker background for footer */
+  background-color: rgba(0, 0, 0, 0.7);
   color: #f5f5f7;
   margin-top: 40px;
 }
