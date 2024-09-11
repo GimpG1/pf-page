@@ -26,165 +26,12 @@
           <h2>About Me</h2>
           <h1>.NET</h1>
           <p>
-            Hello there I'm Karol Dwojak! </br>.NET Developer with a passion for all
-            kind of activities. I specialize in C#. I worked on projects
-            focusing on Desktop and Web API.
-            I lead an active lifestyle, working out 2-3 times a week.
-            I'm also a fan of bicycles and airships, balancing my time between
-            work, study, and my hobbies.
+            Hello there I'm Karol Dwojak! <br />.NET Developer with a passion
+            for all kind of activities. I specialize in <strong>C#</strong>. I
+            worked on projects focusing on Desktop and Web API. I lead an active
+            lifestyle, working out 2-3 times a week. I'm also a fan of bicycles
+            and airships, balancing my time between work, study, and my hobbies.
           </p>
-        </div>
-      </div>
-
-      <!-- Portfolio Section -->
-      <div class="section portfolio">
-        <h2>Work experience</h2>
-        <div class="portfolio-item">
-          <img src="./images/projects/system_operations.webp" alt="Project 1" />
-          <div>
-            <h3>SOFTWARE ENGINEER</h3>
-            <p>
-              - Warehouse management system (WMS) - monitor and manipulate
-              devices around the warehouse (PLC, AGVs),<br />
-              - Terminal-like RESTful WebApi - organisation of work on the
-              warehouse
-            </p>
-            <i
-              class="info-icon"
-              onclick="showDetails(this)"
-            >
-              <img src="./images/projects/details.webp" alt="Details" />
-            </i>
-            <div class="hidden-details" style="display: none">
-              <p>
-                <h4>(WMS)</h4>
-                <p class="portfolio-details">
-                  I was responsible for the system's key communication with
-                external systems (ERP, robot fleet manager, AGVs, PLC devices)
-                running in the warehouse.
-                </p>
-                <p class="portfolio-details">
-                  I developed an internal generic configurable validator for both technical and business
-                rules by combining several design patterns, improving
-                scalability and the ability to use validation in a parallel
-                </p>
-                <p class="portfolio-details">I developed integration tests (nUnit) and unit tests (xUnit) in
-                  combination with the creation of Fixtures using Moq</p>
-                <p class="portfolio-details">I introduced the Outbox pattern and distribution of events in
-                  the system</p>
-                <p class="portfolio-details">
-                  I introduced and Alert Generator as a subsystem,
-                improving the client knowledge about the problem of data synchronisation
-                by other systems connected to ours.
-                </p>
-                
-                <br />
-
-                <h4>(Terminal-like)</h4>
-                I was responsible for setting up communication with a legacy ERP
-                system, using SQL procedures, Entity Framework Core. I created a
-                user action tracking module by collecting information about the
-                actions performed by the user. I stored the information in an
-                XML structure, the solution improved the tracking by catching
-                user errors thus improving error fixing. The application was
-                made in a modular monolith architecture approach use(.NET 6).
-
-                <p class="portfolio-details">
-                  Working with Jira and Bookstack for CI/CD we used Jenkins in combination with Docker
-                  containerisation.</p>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <img src="./images/projects/wms.webp" alt="Project 2" />
-          <div>
-            <h3>SOFTWARE DEVELOPER</h3>
-            <p>
-              - Desktop and web application named “Lovion” - end-to-end software
-              solutions for the digitalisation of the technical core processes
-              of grid and system operators. <br />
-              - Mentoring and onboarding new employees
-            </p>
-            <i
-              class="info-icon"
-              onclick="showDetails(this)"
-            >
-              <img src="./images/projects/details.webp" alt="Details" />
-            </i>
-            <div class="hidden-details" style="display: none">
-              <p>
-                I worked with legacy code and migrated code to the latest
-                version of .NET Framework 4.8 I created add-ons to existing
-                software modules (using Xamarin, WPF), with database maintenance
-                by using NHibernate and unit testing with the MSTests framework.
-                I automated the modernisation process of the application using
-                Powershell and XML configuration. I developed an authentication
-                migration service using SQLite and XML for additional mapping
-                setup and migration configuration. I developed a learning
-                application for new employees using .NET Core 3.1, Entity
-                Framework and SQL. I mentored new employees. I worked with
-                Redmine, later switching to Jira and Confluence for CI/CD we
-                used Jenkins and Teamcity.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <img src="./images/projects/sales_reports.webp" alt="Project 3" />
-          <div>
-            <h3>SOFTWARE ENGINEER</h3>
-            <p>
-              Desktop application for receiving sales and stock reports from a
-              selected range.
-            </p>
-            <i
-              class="info-icon"
-              onclick="showDetails(this)"
-            >
-              <img src="./images/projects/details.webp" alt="Details" />
-            </i>
-            <div class="hidden-details" style="display: none">
-              <p>
-                I took on the role of architect for the sales analytics
-                dashboard, the application ran in the background and was
-                accessible from the tray. Built in a client-server architecture
-                in Java using JavaFX, JSON, Log4J, along with a PostgreSQL
-                database and XML to synchronise the reports received (ERP
-                synchronisation system) Developed end-to-end tests using a
-                Docker container (test containers) with prepared test data.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <img src="./images/projects/budgets_and_plans.webp" alt="Project 4" />
-          <div>
-            <h3>SOFTWARE ENGINEER</h3>
-            <p>
-              The WebApi backend for maintaining employee workloads, including
-              shifts, facilitates payroll accounting by enabling automatic
-              export of working time data to the payroll system.
-            </p>
-            <i
-              class="info-icon"
-              onclick="showDetails(this)"
-            >
-              <img src="./images/projects/details.webp" alt="Details" />
-            </i>
-            <div class="hidden-details" style="display: none">
-              <p>
-                I was developing the use of Azure, including support for file
-                management. The backend was hosted on Azure as a BAAS (backend
-                as a service). I developed modules responsible for organisation
-                and user management using RESTful CRUD, Entity Framework Core. I
-                created tests among others unit and end to end - only with fake
-                data (without using moq) using nUnit (end ot end) and xUnit
-                (unit). I developed Event Sourcing for user maintenance. I have
-                worked with ClickUp, Redmine, Azure Storage and Azure Pipelines
-              </p>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -213,8 +60,246 @@
           Send me an Email
         </button>
       </div>
-    </div>
 
+      <!-- Portfolio Section -->
+      <div class="section portfolio">
+        <h2>Work experience</h2>
+        <div class="portfolio-item">
+          <img src="./images/projects/system_operations.webp" alt="Project 1" />
+          <div>
+            <h3>SOFTWARE ENGINEER</h3>
+            <p>
+              - Warehouse management system (WMS) - monitor and manipulate
+              devices around the warehouse (PLC, AGVs), communicate with
+              customers ERP,<br />
+              - Terminal-like RESTful WebApi - organisation of work on the
+              warehouse
+            </p>
+            <div class="hidden-details" style="display: none">
+              <h5>Terminal Application</h5>
+              <p class="portfolio-details">
+                As part of the WMS software, I was responsible for synchronizing
+                data with the ERP system using an
+                <strong>XML ACL layer</strong>. This involved configuring and
+                setting up <strong>XML</strong> files to ensure seamless data
+                integration. I created generic <strong>XML</strong> generator
+                generate xml only by given object to the mehanism.
+              </p>
+              <br />
+
+              <h5>Alerts Module</h5>
+              <p class="portfolio-details">
+                I developed this module to notify supervisors via email and
+                other system users of important events. It also included a
+                safety alarm feature for the warehouse, which automatically
+                halts all robotic operations to allow for maintenance or
+                troubleshooting when someone enters the warehouse.
+              </p>
+              <br />
+
+              <h5>RoboticsConnector Module</h5>
+              <p class="portfolio-details">
+                I developed the entire module, which included translating
+                locations from a preconfigured warehouse map, automatically
+                refreshing robot locations using <strong>SignalR</strong> for
+                the frontend, and integrating <strong>RabbitMQ</strong> to read
+                these locations. Additionally, the module was responsible for
+                creating various transport missions in the robots' external
+                mission software. This module also included unit and integration
+                tests.
+              </p>
+              <br />
+
+              <h5>ErpConnector Module</h5>
+              <p class="portfolio-details">
+                I developed the part of this module responsible for validating
+                customer data. My implementation used the
+                <strong>strategy design pattern</strong> to handle data
+                validation, ensuring that unwanted or duplicate data (which
+                could be sent by customers via <strong>SQL</strong>
+                procedures) did not enter the WMS.
+              </p>
+              <br />
+
+              <h5>PLC Message Broker</h5>
+              <p class="portfolio-details">
+                To manage the frequent calls (every second) from PLC devices to
+                <strong>RabbitMQ</strong>, I implemented an
+                <strong>outbox pattern</strong>. This ensured that duplicate
+                messages were not processed by our WMS, maintaining data
+                integrity.
+              </p>
+              <br />
+
+              <h5>Workflow</h5>
+              <p class="portfolio-details">
+                In both projects we used to work with modular monolith
+                architecture combined with domain driven design. Working in
+                scrum methodology with Jira and Bookstack. For CI/CD we used
+                Jenkins in combination with Docker containerisation.
+              </p>
+            </div>
+          <i class="info-icon" onclick="showDetails(this)">
+            <img src="./images/down-arrow.png" alt="Icons created by th studio - Flaticon" />
+          </i>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="./images/projects/wms.webp" alt="Project 2" />
+          <div>
+            <h3>SOFTWARE DEVELOPER</h3>
+            <p>
+              - Desktop and web application named “Lovion” - end-to-end software
+              solutions for the digitalisation of the technical core processes
+              of grid and system operators. <br />
+              - Mentoring and onboarding new employees
+            </p>
+            <div class="hidden-details" style="display: none">
+              <h5>Modernization</h5>
+              <p class="portfolio-details">
+                Migrated legacy code to the latest version of
+                <strong>.NET Framework 4.8</strong>. Developed add-ons to
+                existing software modules using <strong>Xamarin</strong> and
+                <strong>WPF</strong>. Managed databases using
+                <strong>NHibernate</strong>. Implemented unit testing using the
+                <strong>MSTests</strong> framework.
+              </p>
+              <br />
+
+              <h5>Automation</h5>
+              <p class="portfolio-details">
+                Automated the modernization process of the application using
+                <strong>PowerShell</strong> and
+                <strong>XML</strong> configuration.
+              </p>
+              <br />
+
+              <h5>Authentication Migration Service</h5>
+              <p class="portfolio-details">
+                Developed a service for authentication migration, utilizing
+                <strong>SQLite</strong> and <strong>XML</strong> for additional
+                mapping setup and migration configuration.
+              </p>
+              <br />
+
+              <h5>Learning Application Development</h5>
+              <p class="portfolio-details">
+                Created a learning application for new employees using
+                <strong>.NET Core 3.1</strong>,
+                <strong>Entity Framework 6</strong>, and <strong>SQL</strong>.
+              </p>
+              <br />
+
+              <h5>Mentorship</h5>
+              <p class="portfolio-details">
+                Mentored new employees, providing guidance and support as they
+                integrated into the team.
+              </p>
+              <br />
+
+              <h5>Workflow</h5>
+              <p class="portfolio-details">
+                We used to work with modular monolith architecture combined with
+                component model. Initially worked with Redmine, later
+                transitioning to Jira and Confluence. Worked in scrum
+                methodology. For CI/CD we used Jenkins and TeamCity.
+              </p>
+            </div>
+            <i class="info-icon" onclick="showDetails(this)">
+              <img src="./images/down-arrow.png" alt="Icons created by th studio - Flaticon" />
+            </i>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="./images/projects/sales_reports.webp" alt="Project 3" />
+          <div>
+            <h3>SOFTWARE ENGINEER</h3>
+            <p>
+              Desktop application for receiving sales and stock reports from a
+              selected range.
+            </p>
+            <div class="hidden-details" style="display: none">
+              <h5>Sales Analytics Dashboard Architecture</h5>
+              <p class="portfolio-details">
+                Took on the role of architect for the sales analytics dashboard.
+                Designed the application to run in the background and be
+                accessible from the system tray. Implemented a client-server
+                architecture using <strong>Java</strong>,
+                <strong>JavaFX</strong>, <strong>JSON</strong>, and
+                <strong>Log4J</strong>. Managed data using a
+                <strong>PostgreSQL</strong> database. Used
+                <strong>XML</strong> to synchronize reports received from the
+                ERP system.
+              </p>
+              <br />
+
+              <h5>End-to-End Testing</h5>
+              <p class="portfolio-details">
+                Developed end-to-end tests using a
+                <strong>Docker container</strong> (test containers) with
+                prepared test data.
+              </p>
+              <br />
+
+              <h5>Workflow</h5>
+              <p class="portfolio-details">
+                I worked in this project with CliclUp, drawio for UML and Word
+                documentation.
+              </p>
+            </div>
+            <i class="info-icon" onclick="showDetails(this)">
+              <img src="./images/down-arrow.png" alt="Icons created by th studio - Flaticon" />
+            </i>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="./images/projects/budgets_and_plans.webp" alt="Project 4" />
+          <div>
+            <h3>SOFTWARE ENGINEER</h3>
+            <p>
+              The WebApi backend for maintaining employee workloads, including
+              shifts, facilitates payroll accounting by enabling automatic
+              export of working time data to the payroll system.
+            </p>
+            <div class="hidden-details" style="display: none">
+              <h5>Azure and File Management</h5>
+              <p class="portfolio-details">
+                Developed solutions using Azure, with a focus on supporting file
+                management. Hosted both frontend and backend as independent
+                docker containers using <strong>Azure</strong>
+              </p>
+              <br />
+
+              <h5>Module Development</h5>
+              <p class="portfolio-details">
+                Developed modules for organization and user management using
+                <strong>RESTful CRUD</strong> and
+                <strong>Entity Framework Core</strong>.
+              </p>
+              <br />
+
+              <h5>Testing</h5>
+              <p class="portfolio-details">
+                Created unit and end-to-end tests using fake data (without using
+                <strong>Moq</strong>). Used <strong>nUnit</strong> for
+                end-to-end testing and <strong>xUnit</strong> for unit testing.
+              </p>
+              <br />
+
+              <h5>Workflow</h5>
+              <p class="portfolio-details">
+                Worked with ClickUp, Redmine, Azure Storage, Azure Pipelines and
+                Scrum methodology. Project were modular monolith architecture
+                combined with domain driven design.
+              </p>
+            </div>
+            <i class="info-icon" onclick="showDetails(this)">
+              <img src="./images/down-arrow.png" alt="Icons created by th studio - Flaticon" />
+            </i>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Footer Section -->
     <footer class="footer">
       <p>Copyright © 2024 Karol Dwojak. All rights reserved.</p>
