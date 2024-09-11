@@ -83,7 +83,8 @@ body {
 
 .portfolio-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  position: relative;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.05);
   padding: 20px;
@@ -137,16 +138,20 @@ body {
 }
 
 .info-icon img {
+  position: sticky;
   border: transparent;
   max-width: 50px;
   max-height: 50px;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
   filter: invert(90%);
+  top: 50%;
+  left: 47%;
   margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 50%;
-  display: inline-block;
+}
+
+.hidden-details {
+  margin-top: 2em;
 }
 
 @media (max-width: 768px) {
@@ -204,6 +209,7 @@ body {
 
   .info-icon img {
     margin: 10px auto 10px;
+    left: 40%;
   }
 
   .portfolio-item img {
