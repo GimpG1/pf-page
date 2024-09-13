@@ -54,15 +54,10 @@ body {
 .about h2 {
   font-size: 2.5em;
   margin-bottom: 10px;
+  margin-top: -20px;
+  text-align: -webkit-right;
 }
 
-.about h1 {
-  font-size: 5em;
-  align-items: end;
-  position: absolute;
-  right: 50px;
-  top: 0;
-}
 
 .about p {
   font-size: 1.2em;
@@ -180,6 +175,7 @@ body {
 
   .about h2 {
     font-size: 1.75em;
+    margin-top: -40px;
   }
 
   .about img {
@@ -275,7 +271,7 @@ body {
 }
 
 .contact button {
-  background-color: #4caf50;
+  background-color: rgba(0, 0, 0, 0.25);
   color: white;
   padding: 12px 24px;
   border: none;
@@ -291,7 +287,7 @@ body {
 }
 
 .contact button:hover {
-  background-color: #45a049;
+  background-color: rgba(52, 18, 90, 0.3);
   transform: scale(1.05);
   box-shadow: 0 0 20px #ffdd33, 0 0 30px #ffdd33, 0 0 40px #ffdd33;
   animation: magic-glow 1.5s infinite alternate;
