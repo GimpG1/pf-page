@@ -7,11 +7,13 @@
 
 body {
   font-family: "Arial";
-  background: linear-gradient(to bottom, purple, blue);
+  background: linear-gradient(to bottom, rgb(83, 1, 177), rgb(0, 0, 160));
   background-size: cover;
   color: #f5f5f7;
   line-height: 1.6;
   text-transform: none;
+  max-width: 1600px;
+  margin: auto;
 }
 
 /* Container */
@@ -36,6 +38,26 @@ body {
   border-bottom: none;
 }
 
+.contact-badges-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-badges-section > div:first-child {
+  margin-left: 5em;
+  flex: 1;
+}
+
+.badges-links {
+  display: inline-grid;
+  display: -ms-inline-grid;
+}
+
+.badges-links img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
 /* About Section */
 .about {
   display: flex;
@@ -57,7 +79,6 @@ body {
   margin-top: -20px;
   text-align: -webkit-right;
 }
-
 
 .about p {
   font-size: 1.2em;
@@ -119,7 +140,7 @@ body {
 }
 
 .portfolio-details {
-  padding: 4px;
+  padding: 1em;
   border: 1px outset rgba(0, 0, 0, 0.7);
   border-radius: 1em;
 }
@@ -180,6 +201,19 @@ body {
 
   .about img {
     margin-bottom: 20px;
+  }
+
+  .contact-badges-section {
+    display: block;
+  }
+
+  .contact-badges-section > div:first-child {
+    margin: auto;
+  }
+
+  .badges-links {
+    display: table;
+    margin: auto;
   }
 
   .portfolio h2 {
